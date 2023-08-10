@@ -9,6 +9,22 @@
 
 </head>
 <body>
+    <div id="root">
+        <h1>{{a1}} {{a2}}</h1>
+      </div>
+    <!--防止vue在启动时产生的提示-->
+    <script type="text/javascript">
+        Vue.config.productionTip = false
+        // 创建vue实例
+            new Vue({
+            el:'#root', // el用于指定当前Vue实例为那个容器服务，值通常为css选择器字符串
+            // el:document.getElementById('root')
+            data:{
+                a1:'hello',
+                a2:'word'
+            }
+        }) 
 
+    </script>
 </body>
 </html>
