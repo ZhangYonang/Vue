@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h2>欢迎来到{{name}}凹分</h2>
+    // 绑定点击事件
+    <button v-on:click="Aofen">点我开始凹分</button>
+</div>
+</body>
+<script type="text/javascript">
+    new Vue({
+        el:'#app',
+        data:{
+            name:'往事乐土'
+        },
+        methods:{
+            Aofen(){
+                alert("寄了，再凹一次")
+            }
+        }
+    })
+</script>
+</html>
+
